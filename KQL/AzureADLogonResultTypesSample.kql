@@ -1,0 +1,19 @@
+// This sample query shows how to join your sign-in logs with hunan-readable
+// descriptions.
+let RTypes = externaldata(
+    ResultType: string,
+    ShortMessage: string,
+    LongMessage: string
+    )[@"https://raw.githubusercontent.com/sshockley/Sentinel-Tables/main/CSV/AzureADLogonResultTypes.csv"]
+    with (format="csv");
+AADNonInteractiveUserSignInLogs
+| where ResultType != 0
+| join kind=leftouter (RTypes)
+    on ResultType
+| summarize num=count()
+    by 
+    Identity,
+    ShortMessage,
+    AppDisplayName,
+    ClientAppUsed
+| order by num desc
