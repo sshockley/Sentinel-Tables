@@ -1,4 +1,5 @@
 ResultType,ShortMessage,LongMessage
+0,LoginSuccessful,"Login was successful"
 16000,SelectUserAccount ,"SelectUserAccount - This is an interrupt thrown by Azure AD, which results in UI that allows the user to select from among multiple valid SSO sessions. This error is fairly common and may be returned to the application if prompt=none is specified."
 16001,UserAccountSelectionInvalid ,"UserAccountSelectionInvalid - You'll see this error if the user selects on a tile that the session select logic has rejected. When triggered, this error allows the user to recover by picking from an updated list of tiles/sessions, or by choosing another account. This error can occur because of a code defect or race condition."
 16002,AppSessionSelectionInvalid ,AppSessionSelectionInvalid - The app-specified SID requirement wasn't met.
