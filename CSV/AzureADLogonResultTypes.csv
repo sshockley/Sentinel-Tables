@@ -1,0 +1,303 @@
+ResultType,ShortMessage,LongMessage
+16000,SelectUserAccount ,"SelectUserAccount - This is an interrupt thrown by Azure AD, which results in UI that allows the user to select from among multiple valid SSO sessions. This error is fairly common and may be returned to the application if prompt=none is specified."
+16001,UserAccountSelectionInvalid ,"UserAccountSelectionInvalid - You'll see this error if the user selects on a tile that the session select logic has rejected. When triggered, this error allows the user to recover by picking from an updated list of tiles/sessions, or by choosing another account. This error can occur because of a code defect or race condition."
+16002,AppSessionSelectionInvalid ,AppSessionSelectionInvalid - The app-specified SID requirement wasn't met.
+16003,SsoUserAccountNotFoundInResourceTenant ,SsoUserAccountNotFoundInResourceTenant - Indicates that the user hasn't been explicitly added to the tenant.
+17003,CredentialKeyProvisioningFailed ,CredentialKeyProvisioningFailed - Azure AD can't provision the user key.
+20001,WsFedSignInResponseError ,WsFedSignInResponseError - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+20012,WsFedMessageInvalid ,WsFedMessageInvalid - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+20033,FedMetadataInvalidTenantName ,FedMetadataInvalidTenantName - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+26000,ApplicationMovedNeedsMultifactorAuth,"Due to a configuration change made by your administrator, or because you moved to a new location, you must use multi-factor authentication to access resoure"
+28002,ParameterScopeInvalid,Provided value for the input parameter scope '{scope}' isn't valid when requesting an access token. Specify a valid scope.
+28003,ParameterScopeEmpty,Provided value for the input parameter scope can't be empty when requesting an access token using the provided authorization code. Specify a valid scope.
+40008,OAuth2IdPUnretryableServerError ,OAuth2IdPUnretryableServerError - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+40009,OAuth2IdPRefreshTokenRedemptionUserError ,OAuth2IdPRefreshTokenRedemptionUserError - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+40010,OAuth2IdPRetryableServerError ,OAuth2IdPRetryableServerError - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+40015,OAuth2IdPAuthCodeRedemptionUserError ,OAuth2IdPAuthCodeRedemptionUserError - There's an issue with your federated Identity Provider. Contact your IDP to resolve this issue.
+50000,TokenIssuanceError ,TokenIssuanceError - There's an issue with the sign-in service. Open a support ticket to resolve this issue.
+50001,InvalidResource ,InvalidResource - The resource is disabled or doesn't exist. Check your app's code to ensure that you have specified the exact resource URL for the resource you're trying to access.
+50002,NotAllowedTenant ,"NotAllowedTenant - Sign-in failed because of a restricted proxy access on the tenant. If it's your own tenant policy, you can change your restricted tenant settings to fix this issue."
+50003,MissingSigningKey ,"MissingSigningKey - Sign-in failed because of a missing signing key or certificate. This might be because there was no signing key configured in the app. To learn more, see the troubleshooting article for error 50003. If you still see issues, contact the app owner or an app admin."
+50005,DevicePolicyError ,DevicePolicyError - User tried to log in to a device from a platform that's currently not supported through Conditional Access policy.
+50006,InvalidSignature ,InvalidSignature - Signature verification failed because of an invalid signature.
+50007,PartnerEncryptionCertificateMissing ,PartnerEncryptionCertificateMissing - The partner encryption certificate was not found for this app. Open a support ticket with Microsoft to get this fixed.
+50008,InvalidSamlToken ,InvalidSamlToken - SAML assertion is missing or misconfigured in the token. Contact your federation provider.
+50010,AudienceUriValidationFailed ,AudienceUriValidationFailed - Audience URI validation for the app failed since no token audiences were configured.
+50011,InvalidReplyTo ,"InvalidReplyTo - The reply address is missing, misconfigured, or doesn't match reply addresses configured for the app. As a resolution ensure to add this missing reply address to the Azure Active Directory application or have someone with the permissions to manage your application in Active Directory do this for you. To learn more, see the troubleshooting article for error 50011."
+50012,AuthenticationFailed ,"AuthenticationFailed - Authentication failed for one of the following reasons: The subject name of the signing certificate isn't authorized, A matching trusted authority policy was not found for the authorized subject name, The certificate chain isn't valid, The signing certificate isn't valid, Policy isn't configured on the tenant, Thumbprint of the signing certificate isn't authorized, Client assertion contains an invalid signature"
+50013,InvalidAssertion ,InvalidAssertion - Assertion is invalid because of various reasons - The token issuer doesn't match the api version within its valid time range -expired -malformed - Refresh token in the assertion isn't a primary refresh token. Contact the app developer.
+50014,GuestUserInPendingState ,"GuestUserInPendingState - The user account doesn?t exist in the directory. An application likely chose the wrong tenant to sign into, and the currently logged in user was prevented from doing so since they did not exist in your tenant. If this user should be able to log in, add them as a guest. For further information, please visit add B2B users."
+50015,ViralUserLegalAgeConsentRequiredState ,ViralUserLegalAgeConsentRequiredState - The user requires legal age group consent.
+50017,CertificateValidationFailed ,"CertificateValidationFailed - Certification validation failed, reasons for the following reasons:, Cannot find issuing certificate in trusted certificates list, Unable to find expected CrlSegment, Cannot find issuing certificate in trusted certificates list, Delta CRL distribution point is configured without a corresponding CRL distribution point, Unable to retrieve valid CRL segments because of a timeout issue, Unable to download CRL, Contact the tenant admin."
+50020,UserUnauthorized ,"UserUnauthorized - Users are unauthorized to call this endpoint. User account '{email}' from identity provider '{idp}' does not exist in tenant '{tenant}' and cannot access the application '{appid}'({appName}) in that tenant. This account needs to be added as an external user in the tenant first. Sign out and sign in again with a different Azure Active Directory user account. If this user should be a member of the tenant, they should be invited via the B2B system. For additional information, visit 50020."
+50027,InvalidJwtToken ,"InvalidJwtToken - Invalid JWT token because of the following reasons: doesn't contain nonce claim, sub claim, subject identifier mismatch, duplicate claim in idToken claims, unexpected issuer, unexpected audience, not within its valid time range, token format isn't proper, External ID token from issuer failed signature verification."
+50029,Invalid URI ,Invalid URI - domain name contains invalid characters. Contact the tenant admin.
+50032,WeakRsaKey ,WeakRsaKey - Indicates the erroneous user attempt to use a weak RSA key.
+50033,RetryableError ,RetryableError - Indicates a transient error not related to the database operations.
+50034,UserAccountNotFound ,"UserAccountNotFound - To sign into this application, the account must be added to the directory. This error can occur because the user mis-typed their username, or isn't in the tenant. An application may have chosen the wrong tenant to sign into, and the currently logged in user was prevented from doing so since they did not exist in your tenant. If this user should be able to log in, add them as a guest. See docs here: Add B2B users."
+50042,UnableToGeneratePairwiseIdentifierWithMissingSalt ,UnableToGeneratePairwiseIdentifierWithMissingSalt - The salt required to generate a pairwise identifier is missing in principle. Contact the tenant admin.
+50043,UnableToGeneratePairwiseIdentifierWithMultipleSalts,UnableToGeneratePairwiseIdentifierWithMultipleSalts
+50048,SubjectMismatchesIssuer ,SubjectMismatchesIssuer - Subject mismatches Issuer claim in the client assertion. Contact the tenant admin.
+50049,NoSuchInstanceForDiscovery ,NoSuchInstanceForDiscovery - Unknown or invalid instance.
+50050,MalformedDiscoveryRequest ,MalformedDiscoveryRequest - The request is malformed.
+50053,IDSLockedOrMaliciousIP,"This error can result from two different reasons: IdsLocked - The account is locked because the user tried to sign in too many times with an incorrect user ID or password. The user is blocked due to repeated sign-in attempts. See Remediate risks and unblock users. Or, sign-in was blocked because it came from an IP address with malicious activity. To determine which failure reason caused this error, sign in to the Azure portal. Navigate to your Azure AD tenant and then Monitoring -> Sign-ins. Find the failed user sign-in with Sign-in error code 50053 and check the Failure reason."
+50055,InvalidPasswordExpiredPassword ,"InvalidPasswordExpiredPassword - The password is expired. The user's password is expired, and therefore their login or session was ended. They will be offered the opportunity to reset it, or may ask an admin to reset it via Reset a user's password using Azure Active Directory."
+50056,InvalidOrNullPassword,Invalid or null password: password doesn't exist in the directory for this user. The user should be asked to enter their password again.
+50057,UserDisabled ,UserDisabled - The user account is disabled. The user object in Active Directory backing this account has been disabled. An admin can re-enable this account through PowerShell
+50058,UserInformationNotProvided ,"UserInformationNotProvided - Session information isn't sufficient for single-sign-on. This means that a user isn't signed in. This is a common error that's expected when a user is unauthenticated and has not yet signed in. If this error is encountered in an SSO context where the user has previously signed in, this means that the SSO session was either not found or invalid. This error may be returned to the application if prompt=none is specified."
+50059,MissingTenantRealmAndNoUserInformationProvided ,MissingTenantRealmAndNoUserInformationProvided - Tenant-identifying information was not found in either the request or implied by any provided credentials. The user can contact the tenant admin to help resolve the issue.
+50061,SignoutInvalidRequest ,SignoutInvalidRequest - Unable to complete sign out. The request was invalid.
+50064,CredentialAuthenticationError ,CredentialAuthenticationError - Credential validation on username or password has failed.
+50068,SignoutInitiatorNotParticipant ,SignoutInitiatorNotParticipant - Sign out has failed. The app that initiated sign out isn't a participant in the current session.
+50070,SignoutUnknownSessionIdentifier ,SignoutUnknownSessionIdentifier - Sign out has failed. The sign out request specified a name identifier that didn't match the existing session(s).
+50071,SignoutMessageExpired ,SignoutMessageExpired - The logout request has expired.
+50072,UserStrongAuthEnrollmentRequiredInterrupt ,UserStrongAuthEnrollmentRequiredInterrupt - User needs to enroll for second factor authentication (interactive).
+50074,UserStrongAuthClientAuthNRequiredInterrupt ,UserStrongAuthClientAuthNRequiredInterrupt - Strong authentication is required and the user did not pass the MFA challenge.
+50076,UserStrongAuthClientAuthNRequired ,"UserStrongAuthClientAuthNRequired - Due to a configuration change made by the admin such as a Conditional Access policy, per-user enforcement, or because you moved to a new location, the user must use multi-factor authentication to access the resource. Retry with a new authorize request for the resource."
+50078,UserStrongAuthExpired,"UserStrongAuthExpired- Presented multi-factor authentication has expired due to policies configured by your administrator, you must refresh your multi-factor authentication to access '{resource}'."
+50079,UserStrongAuthEnrollmentRequired ,"UserStrongAuthEnrollmentRequired - Due to a configuration change made by the admin such as a Conditional Access policy, per-user enforcement, or because the user moved to a new location, the user is required to use multi-factor authentication. Either a managed user needs to register security info to complete multi-factor authentication, or a federated user needs to get the multi-factor claim from the federated identity provider."
+50085,RefreshTokenNeedsSocialIDPLogin,Refresh token needs social IDP login. Have user try signing-in again with username -password
+50086,SasNonRetryableError,SasNonRetryableError
+50087,SasRetryableError ,SasRetryableError - A transient error has occurred during strong authentication. Please try again.
+50088,LimitOnTelecomMFACallsReached,Limit on telecom MFA calls reached. Please try again in a few minutes.
+50089,FlowTokenExpiredOrRevoked,"Authentication failed due to flow token expired. Expected - auth codes, refresh tokens, and sessions expire over time or are revoked by the user or an admin. The app will request a new login from the user."
+50097,DeviceAuthenticationRequired ,DeviceAuthenticationRequired - Device authentication is required.
+50099,PKeyAuthInvalidJwtUnauthorized ,PKeyAuthInvalidJwtUnauthorized - The JWT signature is invalid.
+50105,EntitlementGrantsNotFound ,"EntitlementGrantsNotFound - The signed in user isn't assigned to a role for the signed in app. Assign the user to the app. To learn more, see the troubleshooting article for error 50105."
+50107,InvalidRealmUri ,InvalidRealmUri - The requested federation realm object doesn't exist. Contact the tenant admin.
+50120,ThresholdJwtInvalidJwtFormat ,ThresholdJwtInvalidJwtFormat - Issue with JWT header. Contact the tenant admin.
+50124,ClaimsTransformationInvalidInputParameter ,ClaimsTransformationInvalidInputParameter - Claims Transformation contains invalid input parameter. Contact the tenant admin to update the policy.
+50125,PasswordResetRegistrationRequiredInterrupt ,PasswordResetRegistrationRequiredInterrupt - Sign-in was interrupted because of a password reset or password registration entry.
+50126,InvalidUserNameOrPassword ,InvalidUserNameOrPassword - Error validating credentials due to invalid username or password. The user didn't enter the right credentials. It's expected to see some number of these errors in your logs due to users making mistakes.
+50127,BrokerAppNotInstalled ,BrokerAppNotInstalled - User needs to install a broker app to gain access to this content.
+50128,Invalid domain name ,Invalid domain name - No tenant-identifying information found in either the request or implied by any provided credentials.
+50129,DeviceIsNotWorkplaceJoined ,DeviceIsNotWorkplaceJoined - Workplace join is required to register the device.
+50131,ConditionalAccessFailed ,"ConditionalAccessFailed - Indicates various Conditional Access errors such as bad Windows device state, request blocked due to suspicious activity, access policy, or security policy decisions."
+50132,SsoArtifactInvalidOrExpired ,SsoArtifactInvalidOrExpired - The session isn't valid due to password expiration or recent password change.
+50133,SsoArtifactRevoked ,SsoArtifactRevoked - The session isn't valid due to password expiration or recent password change.
+50134,DeviceFlowAuthorizeWrongDatacenter ,"DeviceFlowAuthorizeWrongDatacenter - Wrong data center. To authorize a request that was initiated by an app in the OAuth 2.0 device flow, the authorizing party must be in the same data center where the original request resides."
+50135,PasswordChangeCompromisedPassword ,PasswordChangeCompromisedPassword - Password change is required due to account risk.
+50136,RedirectMsaSessionToApp ,RedirectMsaSessionToApp - Single MSA session detected.
+50139,SessionMissingMsaOAuth2RefreshToken ,SessionMissingMsaOAuth2RefreshToken - The session is invalid due to a missing external refresh token.
+50140,KmsiInterrupt ,"KmsiInterrupt - This error occurred due to ""Keep me signed in"" interrupt when the user was signing-in. This is an expected part of the login flow, where a user is asked if they want to remain signed into their current browser to make further logins easier. For more information, see The new Azure AD sign-in and ?Keep me signed in? experiences rolling out now!. You can open a support ticket with Correlation ID, Request ID, and Error code to get more details."
+50143,Session mismatch ,"Session mismatch - Session is invalid because user tenant doesn't match the domain hint due to different resource. Open a support ticket with Correlation ID, Request ID, and Error code to get more details."
+50144,InvalidPasswordExpiredOnPremPassword ,InvalidPasswordExpiredOnPremPassword - User's Active Directory password has expired. Generate a new password for the user or have the user use the self-service reset tool to reset their password.
+50146,MissingCustomSigningKey ,"MissingCustomSigningKey - This app is required to be configured with an app-specific signing key. It is either not configured with one, or the key has expired or isn't yet valid. Please contact the owner of the application."
+50147,MissingCodeChallenge ,MissingCodeChallenge - The size of the code challenge parameter isn't valid.
+50155,DeviceAuthenticationFailed ,DeviceAuthenticationFailed - Device authentication failed for this user.
+50158,ExternalSecurityChallenge ,ExternalSecurityChallenge - External security challenge was not satisfied.
+50161,InvalidExternalSecurityChallengeConfiguration ,InvalidExternalSecurityChallengeConfiguration - Claims sent by external provider isn't enough or Missing claim requested to external provider.
+50166,ExternalClaimsProviderThrottled ,ExternalClaimsProviderThrottled - Failed to send the request to the claims provider.
+50168,ChromeBrowserSsoInterruptRequired ,"ChromeBrowserSsoInterruptRequired - The client is capable of obtaining an SSO token through the Windows 10 Accounts extension, but the token was not found in the request or the supplied token was expired."
+50169,InvalidRequestBadRealm ,InvalidRequestBadRealm - The realm isn't a configured realm of the current service namespace.
+50170,MissingExternalClaimsProviderMapping ,MissingExternalClaimsProviderMapping - The external controls mapping is missing.
+50173,FreshTokenNeeded ,"FreshTokenNeeded - The provided grant has expired due to it being revoked, and a fresh auth token is needed. Either an admin or a user revoked the tokens for this user, causing subsequent token refreshes to fail and require reauthentication. Have the user sign in again."
+50177,ExternalChallengeNotSupportedForPassthroughUsers ,ExternalChallengeNotSupportedForPassthroughUsers - External challenge isn't supported for passthrough users.
+50178,SessionControlNotSupportedForPassthroughUsers ,SessionControlNotSupportedForPassthroughUsers - Session control isn't supported for passthrough users.
+50180,WindowsIntegratedAuthMissing ,WindowsIntegratedAuthMissing - Integrated Windows authentication is needed. Enable the tenant for Seamless SSO.
+50187,DeviceInformationNotProvided ,DeviceInformationNotProvided - The service failed to perform device authentication.
+50194,ApplicationNotMultiTenant,Application '{appId}'({appName}) isn't configured as a multi-tenant application. Usage of the /common endpoint isn't supported for such applications created after '{time}'. Use a tenant-specific endpoint or configure the application to be multi-tenant.
+50196,LoopDetected ,"LoopDetected - A client loop has been detected. Check the app?s logic to ensure that token caching is implemented, and that error conditions are handled correctly. The app has made too many of the same request in too short a period, indicating that it is in a faulty state or is abusively requesting tokens."
+50197,ConflictingIdentities ,ConflictingIdentities - The user could not be found. Try signing in again.
+50199,CmsiInterrupt ,"CmsiInterrupt - For security reasons, user confirmation is required for this request. Because this is an ""interaction_required"" error, the client should do interactive auth. This occurs because a system webview has been used to request a token for a native application - the user must be prompted to ask if this was actually the app they meant to sign into. To avoid this prompt, the redirect URI should be part of the following safe list: http://, https://, chrome-extension:// (desktop Chrome browser only)"
+51000,RequiredFeatureNotEnabled ,RequiredFeatureNotEnabled - The feature is disabled.
+51001,DomainHintMustbePresent ,DomainHintMustbePresent - Domain hint must be present with on-premises security identifier or on-premises UPN.
+51004,UserAccountNotInDirectory ,"UserAccountNotInDirectory - The user account doesn?t exist in the directory. An application likely chose the wrong tenant to sign into, and the currently logged in user was prevented from doing so since they did not exist in your tenant. If this user should be able to log in, add them as a guest. For further information, please visit add B2B users."
+51005,TemporaryRedirect ,"TemporaryRedirect - Equivalent to HTTP status 307, which indicates that the requested information is located at the URI specified in the location header. When you receive this status, follow the location header associated with the response. When the original request method was POST, the redirected request will also use the POST method."
+51006,ForceReauthDueToInsufficientAuth ,ForceReauthDueToInsufficientAuth - Integrated Windows authentication is needed. User logged in using a session token that is missing the integrated Windows authentication claim. Request the user to log in again.
+52004,DelegationDoesNotExistForLinkedIn ,DelegationDoesNotExistForLinkedIn - The user has not provided consent for access to LinkedIn resources.
+53000,DeviceNotCompliant ,"DeviceNotCompliant - Conditional Access policy requires a compliant device, and the device isn't compliant. The user must enroll their device with an approved MDM provider like Intune. For additional information, please visit Conditional Access device remediation."
+53001,DeviceNotDomainJoined ,"DeviceNotDomainJoined - Conditional Access policy requires a domain joined device, and the device isn't domain joined. Have the user use a domain joined device."
+53002,ApplicationUsedIsNotAnApprovedApp ,ApplicationUsedIsNotAnApprovedApp - The app used isn't an approved app for Conditional Access. User needs to use one of the apps from the list of approved apps to use in order to get access.
+53003,BlockedByConditionalAccess ,"BlockedByConditionalAccess - Access has been blocked by Conditional Access policies. The access policy does not allow token issuance. If this is unexpected, see the conditional access policy that applied to this request in the Azure Portal or contact your administrator. For additional information, please visit troubleshooting sign-in with Conditional Access."
+53004,ProofUpBlockedDueToRisk ,ProofUpBlockedDueToRisk - User needs to complete the multi-factor authentication registration process before accessing this content. User should register for multi-factor authentication.
+53010,ProofUpBlockedDueToSecurityInfoAcr ,ProofUpBlockedDueToSecurityInfoAcr - Cannot configure multi-factor authentication methods because the organization requires this information to be set from specific locations or devices.
+53011,User blocked due to risk on home tenant.,User blocked due to risk on home tenant.
+54000,MinorUserBlockedLegalAgeGroupRule,MinorUserBlockedLegalAgeGroupRule
+54005,OAuth2AuhorizationCodeAlreadyRedeemed,"OAuth2 Authorization code was already redeemed, please retry with a new valid code or use an existing refresh token."
+65001,DelegationDoesNotExist ,DelegationDoesNotExist - The user or administrator has not consented to use the application with ID X. Send an interactive authorization request for this user and resource.
+65002,ConsentMustBeConfiguredBeforePreauthentication,Consent between first party application '{applicationId}' and first party resource '{resourceId}' must be configured via preauthorization - applications owned and operated by Microsoft must get approval from the API owner before requesting tokens for that API. A developer in your tenant may be attempting to reuse an App ID owned by Microsoft. This error prevents them from impersonating a Microsoft application to call other APIs. They must move to another app ID they register in https://portal.azure.com.
+65004,UserDeclinedConsent ,UserDeclinedConsent - User declined to consent to access the app. Have the user retry the sign-in and consent to the app
+65005,MisconfiguredApplication65005,"MisconfiguredApplication - The app required resource access list does not contain apps discoverable by the resource or The client app has requested access to resource, which was not specified in its required resource access list or Graph service returned bad request or resource not found. If the app supports SAML, you may have configured the app with the wrong Identifier (Entity). To learn more, see the troubleshooting article for error 650056."
+67003,ActorNotValidServiceIdentity,ActorNotValidServiceIdentity
+70000,InvalidGrant ,"InvalidGrant - Authentication failed. The refresh token isn't valid. Error may be due to the following reasons: Token binding header is empty, Token binding hash does not match"
+70001,UnauthorizedClient ,"UnauthorizedClient - The application is disabled. To learn more, see the troubleshooting article for error 70001."
+70002,InvalidClient ,"InvalidClient - Error validating the credentials. The specified client_secret does not match the expected value for this client. Correct the client_secret and try again. For more info, see Use the authorization code to request an access token."
+70003,UnsupportedGrantType ,UnsupportedGrantType - The app returned an unsupported grant type.
+70004,InvalidRedirectUri ,InvalidRedirectUri - The app returned an invalid redirect URI. The redirect address specified by the client does not match any configured addresses or any addresses on the OIDC approve list.
+70005,UnsupportedResponseType ,"UnsupportedResponseType - The app returned an unsupported response type due to the following reasons: response type 'token' isn't enabled for the app, response type 'id_token' requires the 'OpenID' scope -contains an unsupported OAuth parameter value in the encoded wctx"
+70007,UnsupportedResponseMode ,UnsupportedResponseMode - The app returned an unsupported value of response_mode when requesting a token.
+70008,ExpiredOrRevokedGrant ,ExpiredOrRevokedGrant - The refresh token has expired due to inactivity. The token was issued on XXX and was inactive for a certain amount of time.
+70011,InvalidScope ,InvalidScope - The scope requested by the app is invalid.
+70012,MsaServerError ,"MsaServerError - A server error occurred while authenticating an MSA (consumer) user. Try again. If it continues to fail, open a support ticket "
+70016,AuthorizationPending ,AuthorizationPending - OAuth 2.0 device flow error. Authorization is pending. The device will retry polling the request.
+70018,BadVerificationCode ,BadVerificationCode - Invalid verification code due to User typing in wrong user code for device code flow. Authorization isn't approved.
+70019,CodeExpired ,CodeExpired - Verification code expired. Have the user retry the sign-in.
+70043,RefreshTokenExpiredOrInvalid,The refresh token has expired or is invalid due to sign-in frequency checks by conditional access. The token was issued on {issueDate} and the maximum allowed lifetime for this request is {time}.
+75001,BindingSerializationError ,BindingSerializationError - An error occurred during SAML message binding.
+75003,UnsupportedBindingError ,UnsupportedBindingError - The app returned an error related to unsupported binding (SAML protocol response can't be sent via bindings other than HTTP POST).
+75005,Saml2MessageInvalid ,"Saml2MessageInvalid - Azure AD doesn?t support the SAML request sent by the app for SSO. To learn more, see the troubleshooting article for error 75005."
+75008,RequestDeniedError ,RequestDeniedError - The request from the app was denied since the SAML request had an unexpected destination.
+75011,NoMatchedAuthnContextInOutputClaims ,"NoMatchedAuthnContextInOutputClaims - The authentication method by which the user authenticated with the service doesn't match requested authentication method. To learn more, see the troubleshooting article for error 75011."
+75016,Saml2AuthenticationRequestInvalidNameIDPolicy ,Saml2AuthenticationRequestInvalidNameIDPolicy - SAML2 Authentication Request has invalid NameIdPolicy.
+76026,RequestIssueTimeExpired ,RequestIssueTimeExpired - IssueTime in an SAML2 Authentication Request is expired.
+80001,OnPremiseStoreIsNotAvailable ,OnPremiseStoreIsNotAvailable - The Authentication Agent is unable to connect to Active Directory. Make sure that agent servers are members of the same AD forest as the users whose passwords need to be validated and they are able to connect to Active Directory.
+80002,OnPremisePasswordValidatorRequestTimedout ,OnPremisePasswordValidatorRequestTimedout - Password validation request timed out. Make sure that Active Directory is available and responding to requests from the agents.
+80005,OnPremisePasswordValidatorUnpredictableWebException ,"OnPremisePasswordValidatorUnpredictableWebException - An unknown error occurred while processing the response from the Authentication Agent. Retry the request. If it continues to fail, open a support ticket to get more details on the error."
+80007,OnPremisePasswordValidatorErrorOccurredOnPrem ,OnPremisePasswordValidatorErrorOccurredOnPrem - The Authentication Agent is unable to validate user's password. Check the agent logs for more info and verify that Active Directory is operating as expected.
+80010,OnPremisePasswordValidationEncryptionException ,OnPremisePasswordValidationEncryptionException - The Authentication Agent is unable to decrypt password.
+80012,OnPremisePasswordValidationAccountLogonInvalidHours ,OnPremisePasswordValidationAccountLogonInvalidHours - The users attempted to log on outside of the allowed hours (this is specified in AD).
+80013,OnPremisePasswordValidationTimeSkew ,OnPremisePasswordValidationTimeSkew - The authentication attempt could not be completed due to time skew between the machine running the authentication agent and AD. Fix time sync issues.
+80014,OnPremisePasswordValidationAuthenticationAgentTimeout ,"OnPremisePasswordValidationAuthenticationAgentTimeout - Validation request responded after maximum elapsed time exceeded. Open a support ticket with the error code, correlation ID, and timestamp to get more details on this error."
+81004,DesktopSsoIdentityInTicketIsNotAuthenticated ,DesktopSsoIdentityInTicketIsNotAuthenticated - Kerberos authentication attempt failed.
+81005,DesktopSsoAuthenticationPackageNotSupported ,DesktopSsoAuthenticationPackageNotSupported - The authentication package isn't supported.
+81006,DesktopSsoNoAuthorizationHeader ,DesktopSsoNoAuthorizationHeader - No authorization header was found.
+81007,DesktopSsoTenantIsNotOptIn ,DesktopSsoTenantIsNotOptIn - The tenant isn't enabled for Seamless SSO.
+81009,DesktopSsoAuthorizationHeaderValueWithBadFormat ,DesktopSsoAuthorizationHeaderValueWithBadFormat - Unable to validate user's Kerberos ticket.
+81010,DesktopSsoAuthTokenInvalid ,DesktopSsoAuthTokenInvalid - Seamless SSO failed because the user's Kerberos ticket has expired or is invalid.
+81011,DesktopSsoLookupUserBySidFailed ,DesktopSsoLookupUserBySidFailed - Unable to find user object based on information in the user's Kerberos ticket.
+81012,DesktopSsoMismatchBetweenTokenUpnAndChosenUpn ,DesktopSsoMismatchBetweenTokenUpnAndChosenUpn - The user trying to sign in to Azure AD is different from the user signed into the device.
+90002,InvalidTenantName ,"InvalidTenantName - The tenant name wasn't found in the data store. Check to make sure you have the correct tenant ID. The application developer will receive this error if their app attempts to sign into a tenant that we cannot find. Often, this is because a cross-cloud app was used against the wrong cloud, or the developer attempted to sign in to a tenant derived from an email address, but the domain isn't registered."
+90004,InvalidRequestFormat ,InvalidRequestFormat - The request isn't properly formatted.
+90005,InvalidRequestWithMultipleRequirements ,InvalidRequestWithMultipleRequirements - Unable to complete the request. The request isn't valid because the identifier and login hint can't be used together.
+90006,ExternalServerRetryableError ,ExternalServerRetryableError - The service is temporarily unavailable.
+90007,InvalidSessionId ,InvalidSessionId - Bad request. The passed session ID can't be parsed.
+90008,TokenForItselfRequiresGraphPermission ,"TokenForItselfRequiresGraphPermission - The user or administrator hasn't consented to use the application. At the minimum, the application requires access to Azure AD by specifying the sign-in and read user profile permission."
+90009,TokenForItselfMissingIdenticalAppIdentifier ,TokenForItselfMissingIdenticalAppIdentifier - The application is requesting a token for itself. This scenario is supported only if the resource that's specified is using the GUID-based application ID.
+90010,NotSupported ,NotSupported - Unable to create the algorithm.
+90012,RequestTimeout ,RequestTimeout - The requested has timed out.
+90013,InvalidUserInput ,InvalidUserInput - The input from the user isn't valid.
+90014,MissingRequiredField ,MissingRequiredField - This error code may appear in various cases when an expected field isn't present in the credential.
+90015,QueryStringTooLong ,QueryStringTooLong - The query string is too long.
+90016,MissingRequiredClaim ,MissingRequiredClaim - The access token isn't valid. The required claim is missing.
+90019,MissingTenantRealm ,MissingTenantRealm - Azure AD was unable to determine the tenant identifier from the request.
+90020,SAML11AssertionMissingImmutableID,The SAML 1.1 Assertion is missing ImmutableID of the user. Developer error - the app is attempting to sign in without the necessary or correct authentication parameters.
+90022,AuthenticatedInvalidPrincipalNameFormat ,"AuthenticatedInvalidPrincipalNameFormat - The principal name format isn't valid, or doesn't meet the expected name[/host][@realm] format. The principal name is required, host and realm are optional and may be set to null."
+90023,InvalidRequest ,InvalidRequest - The authentication service request isn't valid.
+90024,RequestBudgetExceededError ,RequestBudgetExceededError - A transient error has occurred. Try again.
+90025,RequestProcessingExceededGatewayAllowance,Request processing has exceeded gateway allowance
+90027,UnableToIssueTokensFromThisAPIVersion,We are unable to issue tokens from this API version on the MSA tenant. Please contact the application vendor as they need to use version 2.0 of the protocol to support this.
+90033,MsodsServiceUnavailable ,MsodsServiceUnavailable - The Microsoft Online Directory Service (MSODS) isn't available.
+90036,MsodsServiceUnretryableFailure ,"MsodsServiceUnretryableFailure - An unexpected, non-retryable error from the WCF service hosted by MSODS has occurred. Open a support ticket to get more details on the error."
+90038,NationalCloudTenantRedirection ,NationalCloudTenantRedirection - The specified tenant 'Y' belongs to the National Cloud 'X'. Current cloud instance 'Z' does not federate with X. A cloud redirect error is returned.
+90043,NationalCloudAuthCodeRedirection ,NationalCloudAuthCodeRedirection - The feature is disabled.
+90051,InvalidNationalCloudId ,InvalidNationalCloudId - The national cloud identifier contains an invalid cloud identifier.
+90055,TenantThrottlingError ,TenantThrottlingError - There are too many incoming requests. This exception is thrown for blocked tenants.
+90056,BadResourceRequest ,"BadResourceRequest - To redeem the code for an access token, the app should send a POST request to the /token endpoint. Also, prior to this, you should provide an authorization code and send it in the POST request to the /token endpoint. Refer to this article for an overview of OAuth 2.0 authorization code flow. Direct the user to the /authorize endpoint, which will return an authorization_code. By posting a request to the /token endpoint, the user gets the access token. Log in the Azure portal, and check App registrations > Endpoints to confirm that the two endpoints were configured correctly."
+90072,PassThroughUserMfaError ,"PassThroughUserMfaError - The external account that the user signs in with doesn't exist on the tenant that they signed into; so the user can't satisfy the MFA requirements for the tenant. This error also might occur if the users are synced, but there is a mismatch in the ImmutableID (sourceAnchor) attribute between Active Directory and Azure AD. The account must be added as an external user in the tenant first. Sign out and sign in with a different Azure AD user account. For more information, please visit configuring external identities."
+90081,OrgIdWsFederationMessageInvalid ,OrgIdWsFederationMessageInvalid - An error occurred when the service tried to process a WS-Federation message. The message isn't valid.
+90082,OrgIdWsFederationNotSupported ,OrgIdWsFederationNotSupported - The selected authentication policy for the request isn't currently supported.
+90084,OrgIdWsFederationGuestNotAllowed ,OrgIdWsFederationGuestNotAllowed - Guest accounts aren't allowed for this site.
+90085,OrgIdWsFederationSltRedemptionFailed ,OrgIdWsFederationSltRedemptionFailed - The service is unable to issue a token because the company object hasn't been provisioned yet.
+90086,OrgIdWsTrustDaTokenExpired ,OrgIdWsTrustDaTokenExpired - The user DA token is expired.
+90087,OrgIdWsFederationMessageCreationFromUriFailed ,OrgIdWsFederationMessageCreationFromUriFailed - An error occurred while creating the WS-Federation message from the URI.
+90090,GraphRetryableError ,GraphRetryableError - The service is temporarily unavailable.
+90091,GraphServiceUnreachable,GraphServiceUnreachable
+90092,GraphNonRetryableError,GraphNonRetryableError
+90093,GraphUserUnauthorized ,GraphUserUnauthorized - Graph returned with a forbidden error code for the request.
+90094,AdminConsentRequired ,AdminConsentRequired - Administrator consent is required.
+90095,AdminConsentRequiredRequestAccess,"AdminConsentRequiredRequestAccess- In the Admin Consent Workflow experience, an interrupt that appears when the user is told they need to ask the admin for consent."
+90099,ApplicationNotAuthorizedInTenant,The application '{appId}' ({appName}) has not been authorized in the tenant '{tenant}'. Applications must be authorized to access the customer tenant before partner delegated administrators can use them. Provide pre-consent or execute the appropriate Partner Center API to authorize the application.
+90100,InvalidRequestParameter ,InvalidRequestParameter - The parameter is empty or not valid.
+90101,InvalidEmailAddress ,InvalidEmailAddress - The supplied data isn't a valid email address. The email address must be in the format someone@example.com.
+90102,InvalidUriParameter ,InvalidUriParameter - The value must be a valid absolute URI.
+90107,InvalidXml ,InvalidXml - The request isn't valid. Make sure your data doesn't have invalid characters.
+90114,InvalidExpiryDate ,InvalidExpiryDate - The bulk token expiration timestamp will cause an expired token to be issued.
+90117,InvalidRequestInput,InvalidRequestInput
+90119,InvalidUserCode ,InvalidUserCode - The user code is null or empty.
+90120,InvalidDeviceFlowRequest ,InvalidDeviceFlowRequest - The request was already authorized or declined.
+90121,InvalidEmptyRequest ,InvalidEmptyRequest - Invalid empty request.
+90123,IdentityProviderAccessDenied ,IdentityProviderAccessDenied - The token can't be issued because the identity or claim issuance provider denied the request.
+90124,V1ResourceV2GlobalEndpointNotSupported ,V1ResourceV2GlobalEndpointNotSupported - The resource isn't supported over the /common or /consumers endpoints. Use the /organizations or tenant-specific endpoint instead.
+90125,DebugModeEnrollTenantNotFound ,DebugModeEnrollTenantNotFound - The user isn't in the system. Make sure you entered the user name correctly.
+90126,DebugModeEnrollTenantNotInferred ,DebugModeEnrollTenantNotInferred - The user type isn't supported on this endpoint. The system can't infer the user's tenant from the user name.
+90130,NonConvergedAppV2GlobalEndpointNotSupported ,NonConvergedAppV2GlobalEndpointNotSupported - The application isn't supported over the /common or /consumers endpoints. Use the /organizations or tenant-specific endpoint instead.
+100007,AzureADRegionalWrongAuthType,Azure AD Regional ONLY supports auth either for MSIs OR for requests from MSAL using SN+I for 1P apps or 3P apps in Microsoft infrastructure tenants.
+120000,PasswordChangeIncorrectCurrentPassword,PasswordChangeIncorrectCurrentPassword
+120002,PasswordChangeInvalidNewPasswordWeak,PasswordChangeInvalidNewPasswordWeak
+120003,PasswordChangeInvalidNewPasswordContainsMemberName,PasswordChangeInvalidNewPasswordContainsMemberName
+120004,PasswordChangeOnPremComplexity,PasswordChangeOnPremComplexity
+120005,PasswordChangeOnPremSuccessCloudFail,PasswordChangeOnPremSuccessCloudFail
+120008,PasswordChangeAsyncJobStateTerminated ,PasswordChangeAsyncJobStateTerminated - A non-retryable error has occurred.
+120011,PasswordChangeAsyncUpnInferenceFailed,PasswordChangeAsyncUpnInferenceFailed
+120012,PasswordChangeNeedsToHappenOnPrem,PasswordChangeNeedsToHappenOnPrem
+120013,PasswordChangeOnPremisesConnectivityFailure,PasswordChangeOnPremisesConnectivityFailure
+120014,PasswordChangeOnPremUserAccountLockedOutOrDisabled,PasswordChangeOnPremUserAccountLockedOutOrDisabled
+120015,PasswordChangeADAdminActionRequired,PasswordChangeADAdminActionRequired
+120016,PasswordChangeUserNotFoundBySspr,PasswordChangeUserNotFoundBySspr
+120018,PasswordChangePasswordDoesnotComplyFuzzyPolicy,PasswordChangePasswordDoesnotComplyFuzzyPolicy
+120020,PasswordChangeFailure,PasswordChangeFailure
+120021,PartnerServiceSsprInternalServiceError,PartnerServiceSsprInternalServiceError
+130004,NgcKeyNotFound ,NgcKeyNotFound - The user principal doesn't have the NGC ID key configured.
+130005,NgcInvalidSignature ,NgcInvalidSignature - NGC key signature verified failed.
+130006,NgcTransportKeyNotFound ,NgcTransportKeyNotFound - The NGC transport key isn't configured on the device.
+130007,NgcDeviceIsDisabled ,NgcDeviceIsDisabled - The device is disabled.
+130008,NgcDeviceIsNotFound ,NgcDeviceIsNotFound - The device referenced by the NGC key wasn't found.
+135010,KeyNotFound,KeyNotFound
+135011,DeviceIsDisabled,Device used during the authentication is disabled.
+140000,InvalidRequestNonce ,InvalidRequestNonce - Request nonce isn't provided.
+140001,InvalidSessionKey ,InvalidSessionKey - The session key isn't valid.
+165004,RuntimeSpecificErrorSeeMessage,Actual message content is runtime specific. Please see returned exception message for details.
+165900,InvalidApiRequest ,InvalidApiRequest - Invalid request.
+220450,UnsupportedAndroidWebViewVersion ,UnsupportedAndroidWebViewVersion - The Chrome WebView version isn't supported.
+220501,InvalidCrlDownload,InvalidCrlDownload
+221000,DeviceOnlyTokensNotSupportedByResource ,DeviceOnlyTokensNotSupportedByResource - The resource isn't configured to accept device-only tokens.
+230062,PrimaryRefreshTokenNotSupported,Presented or requested primary refresh token could not be supported
+240001,BulkAADJTokenUnauthorized ,BulkAADJTokenUnauthorized - The user isn't authorized to register devices in Azure AD.
+240002,RequiredClaimIsMissing ,RequiredClaimIsMissing - The id_token can't be used as urn:ietf:params:oauth:grant-type:jwt-bearer grant.
+500011,InvalidResourceServicePrincipalNotFound ,"InvalidResourceServicePrincipalNotFound - The resource principal named {name} was not found in the tenant named {tenant}. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have sent your authentication request to the wrong tenant. If you expect the app to be installed, you may need to provide administrator permissions to add it. Check with the developers of the resource and application to understand what the right setup for your tenant is."
+500021,AccessToTenantIsDenied500021,"Access to '{tenant}' tenant is denied. 500021 indicates that the tenant restriction feature is configured and that the user is trying to access a tenant that isn't in the list of allowed tenants specified in the header Restrict-Access-To-Tenant. For more information, see Use tenant restrictions to manage access to SaaS cloud applications."
+500022,AccessToTenantIsDenied500022,"Access to '{tenant}' tenant is denied. 500022 indicates that the tenant restriction feature is configured and that the user is trying to access a tenant that isn't in the list of allowed tenants specified in the header Restrict-Access-To-Tenant. For more information, see Use tenant restrictions to manage access to SaaS cloud applications."
+500112,ReplyAddressDoesNotMatch,The reply address does not match the reply address provided when requesting Authorization code
+500113,NoReplyAddressRegistered,No reply address is registered for the application
+500131,AssertionAudienceDoesNotMatchClientApp,Assertion audience does not match the Client app presenting the assertion
+500133,Undocumented500133,Undocumented 500133
+500212,NotAllowedByOutboundPolicyTenant ,NotAllowedByOutboundPolicyTenant - The user's administrator has set an outbound access policy that doesn't allow access to the resource tenant.
+500213,NotAllowedByInboundPolicyTenant ,NotAllowedByInboundPolicyTenant - The resource tenant's cross-tenant access policy doesn't allow this user to access this tenant.
+500571,Undocumented500571,Undocumented 500571
+501241,MandatoryInputMissing,"Mandatory Input '{paramName}' missing from transformation ID '{transformId}'. This error is returned while Azure AD is trying to build a SAML response to the application. NameID claim or NameIdentifier is mandatory in SAML response and if Azure AD failed to get source attribute for NameID claim, it will return this error. As a resolution, ensure you add claim rules in Azure portal > Azure Active Directory > Enterprise Applications > Select your application > Single Sign-On > User Attributes & Claims > Unique User Identifier (Name ID)."
+501481,CodeVerifierDoesntMatchCodeChallenge,The Code_Verifier doesn't match the code_challenge supplied in the authorization request.
+501491,InvalidCodeChallengeMethodInvalidSize ,InvalidCodeChallengeMethodInvalidSize - Invalid size of Code_Challenge parameter.
+530032,BlockedByConditionalAccessOnSecurityPolicy ,BlockedByConditionalAccessOnSecurityPolicy - The tenant admin has configured a security policy that blocks this request. Check the security policies that are defined on the tenant level to determine if your request meets the policy requirements.
+530034,DelegatedAdminBlockedDueToSuspiciousActivity ,DelegatedAdminBlockedDueToSuspiciousActivity - A delegated administrator was blocked from accessing the tenant due to account risk in their home tenant.
+650052,AppNeedsServiceNotSubscribed,"The app needs access to a service (\""{name}\"") that your organization \""{organization}\"" has not subscribed to or enabled. Contact your IT Admin to review the configuration of your service subscriptions."
+650054,AppNeedsPermissions,The application asked for permissions to access a resource that has been removed or is no longer available. Make sure that all resources the app is calling are present in the tenant you're operating in.
+650056,MisconfiguredApplication650056,"Misconfigured application. This could be due to one of the following: the client has not listed any permissions for '{name}' in the requested permissions in the client's application registration. Or, the admin has not consented in the tenant. Or, check the application identifier in the request to ensure it matches the configured client application identifier. Or, check the certificate in the request to ensure it's valid. Please contact your admin to fix the configuration or consent on behalf of the tenant. Client app ID: {ID}. Please contact your admin to fix the configuration or consent on behalf of the tenant."
+650057,InvalidResource,Invalid resource. The client has requested access to a resource which isn't listed in the requested permissions in the client's application registration. Client app ID: {appId}({appName}). Resource value from request: {resource}. Resource app ID: {resourceAppId}. List of valid resources from app registration: {regList}.
+700003,DeviceNotFoundInTenant,Device object was not found in the tenant
+700005,InvalidGrantRedeemAgainstWrongTenant ,"InvalidGrantRedeemAgainstWrongTenant - Provided Authorization Code is intended to use against other tenant, thus rejected. OAuth2 Authorization Code must be redeemed against same tenant it was acquired for (/common or /{tenant-ID} as appropriate)"
+700007,GrantIssuedForDifferentClientID,The grant was issued for a different client id
+700011,UnauthorizedClientAppNotFoundInOrgIdTenant ,"UnauthorizedClientAppNotFoundInOrgIdTenant - Application with identifier {appIdentifier} was not found in the directory. A client application requested a token from your tenant, but the client app doesn't exist in your tenant, so the call failed."
+700016,UnauthorizedClient_DoesNotMatchRequest ,UnauthorizedClient_DoesNotMatchRequest - The application wasn't found in the directory/tenant. This can happen if the application has not been installed by the administrator of the tenant or consented to by any user in the tenant. You might have misconfigured the identifier value for the application or sent your authentication request to the wrong tenant.
+700020,InteractionRequired ,InteractionRequired - The access grant requires interaction.
+700022,InvalidMultipleResourcesScope ,InvalidMultipleResourcesScope - The provided value for the input parameter scope isn't valid because it contains more than one resource.
+700023,InvalidResourcelessScope ,InvalidResourcelessScope - The provided value for the input parameter scope isn't valid when request an access token.
+700024,Undocumented700024,Undocumented 700024
+700025,InvalidClientPublicClientWithCredential ,InvalidClientPublicClientWithCredential - Client is public so neither 'client_assertion' nor 'client_secret' should be presented.
+700027,ClientAssertionFailedSignatureValidation,Client assertion failed signature validation
+700030,Invalid certificate ,Invalid certificate - subject name in certificate isn't authorized. SubjectNames/SubjectAlternativeNames (up to 10) in token certificate are: {certificateSubjects}.
+700054,ResponseTypeNotEnabledForApplication,"Response_type 'id_token' isn't enabled for the application. The application requested an ID token from the authorization endpoint, but did not have ID token implicit grant enabled. Go to Azure portal > Azure Active Directory > App registrations > Select your application > Authentication > Under 'Implicit grant and hybrid flows', make sure 'ID tokens' is selected."
+700082,ExpiredOrRevokedGrantInactiveToken ,"ExpiredOrRevokedGrantInactiveToken - The refresh token has expired due to inactivity. The token was issued on {issueDate} and was inactive for {time}. Expected part of the token lifecycle - the user went an extended period of time without using the application, so the token was expired when the app attempted to refresh it."
+700084,RefreshTokenLifetimeCantBeExtended,"The refresh token was issued to a single page app (SPA), and therefore has a fixed, limited lifetime of {time}, which can't be extended. It is now expired and a new sign in request must be sent by the SPA to the sign in page. The token was issued on {issueDate}."
+750054,SAMLRequestOrSAMLResponseNotPresentAsQuerystring,"SAMLRequest or SAMLResponse must be present as query string parameters in HTTP request for SAML Redirect binding. To learn more, see the troubleshooting article for error 750054."
+900144,NameMissingDeveloperError,The request body must contain the following parameter: '{name}'. Developer error - the app is attempting to sign in without the necessary or correct authentication parameters.
+900236,InvalidRequestSamlPropertyUnsupported,InvalidRequestSamlPropertyUnsupported- The SAML authentication request property '{propertyName}' is not supported and must not be set.
+900382,ConfidentialClientNotSupportedCrossCloud900382,Confidential Client isn't supported in Cross Cloud request.
+900432,ConfidentialClientNotSupportedCrossCloud900432,Confidential Client isn't supported in Cross Cloud request.
+900561,BadResourceRequestInvalidRequest ,"BadResourceRequestInvalidRequest - The endpoint only accepts {valid_verbs} requests. Received a {invalid_verb} request. {valid_verbs} represents a list of HTTP verbs supported by the endpoint (for example, POST), {invalid_verb} is an HTTP verb used in the current request (for example, GET). This can be due to developer error, or due to users pressing the back button in their browser, triggering a bad request. It can be ignored."
+900971,NoReplyAddressProvided,No reply address provided.
+901002,ResourceRequestParameterNotSupported,901002: The 'resource' request parameter isn't supported.
+1000000,UserNotBoundError ,"UserNotBoundError - The Bind API requires the Azure AD user to also authenticate with an external IDP, which hasn't happened yet."
+1000002,BindCompleteInterruptError ,"BindCompleteInterruptError - The bind completed successfully, but the user must be informed."
+1000031,ApplicationCantBeAccessed,Application {appDisplayName} can't be accessed at this time. Contact your administrator.
+1000104,XCB2BResourceCloudNotAllowedOnIdentityTenant ,XCB2BResourceCloudNotAllowedOnIdentityTenant - Resource cloud {resourceCloud} isn't allowed on identity tenant {identityTenant}. {resourceCloud} - cloud instance which owns the resource. {identityTenant} - is the tenant where signing-in identity is originated from.
+7000112,UnauthorizedClientApplicationDisabled ,UnauthorizedClientApplicationDisabled - The application is disabled.
+7000114,ApplicationNotAllowedToMakeOnBehalfOfCalls,Application 'appIdentifier' isn't allowed to make application on-behalf-of calls.
+7000215,InvalidClientSecretDeveloperError,Invalid client secret is provided. Developer error - the app is attempting to sign in without the necessary or correct authentication parameters.
+7000218,RequestBodyMustContainClientAssertionOrClientSecret,The request body must contain the following parameter: 'client_assertion' or 'client_secret'.
+7000222,InvalidClientSecretExpiredKeysProvided ,"InvalidClientSecretExpiredKeysProvided - The provided client secret keys are expired. Visit the Azure portal to create new keys for your app, or consider using certificate credentials for added security: https://aka.ms/certCreds"
+7500514,SupportedSAMLResponseNotFound,A supported type of SAML response was not found. The supported response types are 'Response' (in XML namespace 'urn:oasis:names:tc:SAML:2.0:protocol') or 'Assertion' (in XML namespace 'urn:oasis:names:tc:SAML:2.0:assertion'). Application error - the developer will handle this error.
+7500529,InvalidSAMLID,"The value ?SAMLId-Guid? isn't a valid SAML ID - Azure AD uses this attribute to populate the InResponseTo attribute of the returned response. ID must not begin with a number, so a common strategy is to prepend a string like ""ID"" to the string representation of a GUID. For example, id6c1c178c166d486687be4aaf5e482730 is a valid ID."
+9001023,GrantTypeNotSupported,The grant type isn't supported over the /common or /consumers endpoints. Please use the /organizations or tenant-specific endpoint.
+9002313,InvalidRequest ,InvalidRequest - Request is malformed or invalid. - The issue here is because there was something wrong with the request to a certain endpoint. The suggestion to this issue is to get a fiddler trace of the error occurring and looking to see if the request is actually properly formatted or not.
+9002332,AplicationConfiguredForAADOnly,Application '{principalId}'({principalName}) is configured for use by Azure Active Directory users only. Please do not use the /consumers endpoint to serve this request.
